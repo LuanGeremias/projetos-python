@@ -1,8 +1,9 @@
-matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-for l in range(0, 3):
-    for c in range(0, 3):
-        matriz[l][c] = int(input(f'Digite um valor para [ {l}, {c} ] '))
-for l in range(0, 3):
-    for c in range(0, 3):
-        print(f'[ {matriz[l][c]} ]', end='')
+numeros = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for c in range(0, 3):
+    for l in range(0, 3):
+        numeros[c][l] = int(input(f'Digite um valor para [ {c}, {l} ]: '))
+print('-=' * 30)
+for c in range(0, 3):
+    for l in range(0, 3):
+        print(f'[ {numeros[c][l]} ]', end='')
     print()
