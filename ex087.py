@@ -4,9 +4,9 @@ for c in range(0, 3):
     for l in range(0, 3):
         numeros[c][l] = int(input(f'Digite um valor para [ {c}, {l} ] '))
         if numeros[c][l] % 2 == 0:
-            pares = pares + numeros[c][l]
+            pares += numeros[c][l]
         if l == 2:
-            soma = soma + numeros[c][2]
+            soma += numeros[c][2]
         if c == 1:
             if l == 0:
                 maior = numeros[c][l]

@@ -12,6 +12,7 @@ if jogos > 0:
         numeros.clear()
         for c in range(0, 6):
             numeros.append(randint(1, 60))
+        numeros.sort()
         print(f'Jogo {i + 1}: {numeros}')
     print('-=' * 5, ' < BOA SORTE! > ', '-=' * 5)
 else:

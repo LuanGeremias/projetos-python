@@ -5,5 +5,5 @@ for c in range(0, 3):
 print('-=' * 30)
 for c in range(0, 3):
     for l in range(0, 3):
-        print(f'[ {numeros[c][l]} ]', end='')
+        print(f'[{numeros[c][l]}:^5]', end='')
     print()
