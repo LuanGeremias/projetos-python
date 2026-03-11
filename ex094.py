@@ -22,7 +22,7 @@ while True:
 print('-=' * 30)
 print(f' - O grupo tem {len(lista)} pessoas.')
 media = somaidade / len(lista)
-print(f' - A média de idade é de {media:.2f} anos.')
+print(f' - A média de idade é de {media:5.2f} anos.')
 print(' - As mulheres cadastradas foram: ', end='')
 for c in lista:
     if c['sexo'] == 'F':
@@ -31,7 +31,7 @@ print()
 print(' - Lista das pessoas que estão acima da média: ')
 for c in lista:
     if c['idade'] >= media:
-        print('     ')
+        print('     ', end='')
         for k, v in c.items():
             print(f'{k} = {v}; ', end='')
         print()
