@@ -7,4 +7,4 @@ def escreva(txt):
 
 escreva('Luan')
 escreva('Luan Geremias')
-escreva('Gabrielly')
+escreva('Gustavo')
