@@ -1,17 +1,19 @@
 from time import sleep
 def maior(* num):
-    
+    cont = maior = 0
     print('-=' * 30)
-    maior = num[0]
     print('Analisando os valores passados...')
-    sleep(1)
-    for c in range(0, len(num)):
-        if num[c] > maior:
-            maior = num[c]
-        print(f'{num[c]}',end=' ')
+    for valor in num:
+        print(f'{valor} ', end='', flush=True)
         sleep(0.5)
-    print(f'Foram informados {len(num)} valores ao todo.')
-    print(f'O maior valor informado foi {maior}.')
+        if cont == 0:
+            maior = valor
+        else:
+            if valor > maior:
+                maior = valor
+        cont += 1
+    print(f'Forem digitados {cont} valores passados.')
+    print(f'O maior valor informado foi {maior}')
 
 
 maior(2, 9, 4, 5, 7, 1)
@@ -19,4 +21,3 @@ maior(4, 7, 0)
 maior(6, 1)
 maior(6)
 maior()
-
