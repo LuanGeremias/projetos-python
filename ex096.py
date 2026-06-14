@@ -1,8 +1,8 @@
-def area(largura, comprimento):
-    areaa = largura * comprimento
-    print(f'A area do terreno é {areaa}²')
+def area(a, b):
+    areaa = a * b
+    return areaa
 
 
-lar = float(input('Digite a largura do terreno: '))
-comp = float(input('Digite o comprimento do terreno: '))
-area(lar, comp)
+a = float(input('Largura: '))
+b = float(input('comprimento: '))
+print(f'A area do terreno {a}x{b} é de {area(a, b)}')
